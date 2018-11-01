@@ -30,7 +30,7 @@ search = (query) => {
     });
 }
 
-  updateSelectedGif = (id) => {
+  selectGif = (id) => {
     this.setState({
       selectedGifId: id
     });
@@ -46,7 +46,7 @@ search = (query) => {
           </div>
         </div>
         <div className="right-scene">
-          <GifList gifs={this.state.gifs} updateGifFunction={this.updateSelectedGif} />
+          <GifList gifs={this.state.gifs} selectGif={this.selectGif} />
         </div>
       </div>
     );
